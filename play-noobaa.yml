@@ -5,7 +5,7 @@
   vars:
     - NOOBAA_CORE_IMAGE: "quay.io/noobaa/noobaa-core:master-20220422"
     - MINIO_IMAGE: "docker.io/minio/minio:latest"
-    - POSTGRES_IMAGE: "docker.io/library/postgres:latest"
+    - POSTGRES_IMAGE: "docker.io/library/postgres:15"
     - POSTGRES_HOST: "{{ ansible_facts['default_ipv4']['address'] }}"
     - POSTGRES_USER: "noobaa"
     - POSTGRES_PASSWORD: "noobaa"
