@@ -110,7 +110,7 @@ if you do have firewalld enabled on the Host/VM ensure to set
 after adapting the necessary Variables in the playbookt, you can run it to deploy your NooBaa system
 
 ~~~
-$ ansible-play play-noobaa.yml 
+$ ansible-playbook play-noobaa.yml 
 PLAY [NooBaa installation] *****************************************************************************************************************************************************************************************
 
 TASK [Gathering Facts] *********************************************************************************************************************************************************************************************
