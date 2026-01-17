@@ -307,7 +307,9 @@
     - name: "grant users access to MinIO"
       tags:
         - s3
-      ansible.builtin.command: "mcli admin policy set {{ item }} readwrite user={{ MINIO_S3_ACCESS }}"
+      # ansible.builtin.command: "mcli admin policy set {{ item }} readwrite user={{ MINIO_S3_ACCESS }}"
+      # Fix issuse Deprecated command. Please use 'mc admin policy attach' instead.
+      ansible.builtin.command: "mcli admin policy attach {{ item }} readwrite --user {{ MINIO_S3_ACCESS }}"
       with_items:
         - "minio1"
         - "minio2"
