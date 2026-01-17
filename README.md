@@ -34,6 +34,15 @@ Please find the presentation at [MultiCloud_Gateway-NooBaa-Deepdive.pdf](MultiCl
     - Internet access
     - quay.io credentials and podman configured on the Host/VM that is target for the NooBaa System
 
+```
+dnf install git -y
+dnf install python3-pip
+python3 -m pip install --upgrade pip
+pip install ansible
+dnf install podman
+pip install boto3
+```
+
 ### configure ansible 
 
 create a directory for the plays and configure ansible for that directory
